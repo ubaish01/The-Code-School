@@ -14,23 +14,27 @@ import { RiSecurePaymentFill } from 'react-icons/ri';
 import { Link } from 'react-router-dom';
 import introVideo from '../../assets/videos/intro.mp4';
 import termsAndCondition from '../../assets/docs/termsAndCondition';
+import founder from "../../assets/images/founder.jpg"
+
+const desc = `Welcome to The Code School, your premier destination for computer science education. We are a subscription-based online learning platform that offers high-quality computer science courses to students of all levels, from beginners to advanced learners.
+
+At The Code School, we believe that education should be accessible, engaging, and interactive. Our team of experienced computer science professionals and educators are dedicated to creating a dynamic and immersive learning experience for our students. Our courses are carefully curated to cover a wide range of topics, including programming languages, web development, data structures, algorithms, and more.`
 
 const Founder = () => (
   <Stack direction={['column', 'row']} spacing={['4', '16']} padding={'8'}>
     <VStack>
       <Avatar
-        src="https://avatars.githubusercontent.com/u/25058652"
+        src={founder}
         boxSize={['40', '48']}
       />
       <Text children="Co-Founder" opacity={0.7} />
     </VStack>
 
     <VStack justifyContent={'center'} alignItems={['center', 'flex-start']}>
-      <Heading children="Abhishek Singh" size={['md', 'xl']} />
+      <Heading children="Ubaish Malik" size={['md', 'xl']} />
       <Text
         textAlign={['center', 'left']}
-        children={`Hi, I am a full-stack developer and a teacher.
-      Our mission is to provide quality content at reasonable price.`}
+        children={desc}
       />
     </VStack>
   </Stack>
